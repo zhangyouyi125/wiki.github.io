@@ -14,6 +14,7 @@ copyright: "zhangyouyi"
 
 theme:
   name: material
+  custom_dir: overrides
   # icon:
   #   logo: ./assets/8.png
   logo: ./images/8.png
