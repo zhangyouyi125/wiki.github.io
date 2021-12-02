@@ -1,11 +1,92 @@
-site_name: My Docs
+# Project information
+site_name: FUXI IS
+site_url: https://zhangyouyi125.github.io/wiki/
+site_description: fuxiis
+site_author: zhangyouyi
 
-theme: cosmo
+# Repository
+repo_name: zhang
+repo_url: https://github.com/zhangyouyi125/wiki
+edit_uri: https://github.com/zhangyouyi125/wiki
+
+# Copyright
+copyright: "zhangyouyi"
+
+theme:
+  name: material
+  # icon:
+  #   logo: ./assets/8.png
+  logo: ./images/8.png
+    #icon: image/8.png
+  highlightjs: true        # 打开代码高亮
+  hljs_style: github       # 代码高亮风格
+  hljs_languages:          # 编程语言
+    - c
+    - c++
+    - java
+    - python
+    - go
+    - yaml
+  features:
+    - navigation.tabs
+  features:
+    tabs: true
+    
+  palette:
+    scheme: default
+    primary: black
+    accent: 'orange'
+
 
 nav:
-  - Index: index.md
-  - Page 1: page1.md
+  - User Manual: index.md
+  - WhitePaper: page1.md
   # 下面代表的是一组页面
-  - Page Group:
+  - SDK:
     - Sub Page 1: subpage/page1.md
     - Sub Page 2: subpage/page2.md
+    - test 2: subpage/测试.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+
+  disqus: 'fuxiis'
+   
+
+plugins:
+  - search
+
+
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
