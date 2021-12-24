@@ -1,11 +1,11 @@
 # Project information
-site_name: FUXI IS
+site_name: FUXI.IS
 site_url: https://zhangyouyi125.github.io/wiki/
 site_description: fuxiis
-site_author: zhangyouyi
+site_author: Github
 
 # Repository
-repo_name: zhang
+repo_name: Github
 repo_url: https://github.com/zhangyouyi125/wiki
 edit_uri: https://github.com/zhangyouyi125/wiki
 
@@ -14,10 +14,10 @@ copyright: "zhangyouyi"
 
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: material
   # icon:
   #   logo: ./assets/8.png
-  logo: ./images/8.png
+  logo: ./assets/images/logo.png
     #icon: image/8.png
   highlightjs: true        # 打开代码高亮
   hljs_style: github       # 代码高亮风格
@@ -29,30 +29,66 @@ theme:
     - go
     - yaml
   features:
+    - content.code.annotate
+    - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
     - navigation.tabs
-  features:
-    tabs: true
-    
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+
   palette:
-    scheme: default
-    primary: black
-    accent: 'orange'
+    - scheme: default
+      primary: white
+      accent: pink
+      # toggle:
+      #   icon: material/toggle-switch
+      #   name: Switch to dark mode
+    # - scheme: slate
+    #   primary: black
+    #   accent: red
+    #   toggle:
+    #     icon: material/toggle-switch-off-outline
+    #     name: Switch to light mode
+    
+    
 
 
 nav:
-  - User Manual: index.md
-  - WhitePaper: page1.md
+  - Home: index.md
+  - 产品白皮书: WhitePaper/FUXI.IS_WhitePaper.md
   # 下面代表的是一组页面
-  - SDK:
-    - Sub Page 1: subpage/page1.md
-    - Sub Page 2: subpage/page2.md
-    - test 2: subpage/测试.md
+  - API 接口文档: API_Guide/FUXI.IS_API_Guide.md
+  - 开始体验: page1.md
+  - 开发者: subpage/测试.md
+  - 合作伙伴: subpage/测试.md
+  - 关于我们: AboutUs.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/facebook
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/weibo
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/github
+      link: https://twitter.com/squidfunk
+  image: ./images/fuxilogo.png
+
+    
 
   disqus: 'fuxiis'
    
@@ -87,6 +123,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

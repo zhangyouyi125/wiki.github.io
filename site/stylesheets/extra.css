@@ -1,0 +1,26 @@
+[data-md-color-scheme="slate"]{
+  --md-primary-pg-color:        #861B2A;
+  --md-primary-fg-color--light: #861B2A;
+  --md-primary-fg-color--dark:  #861B2A;
+}
+[data-md-color-scheme="default"]{
+  --md-accent-fg-color:#861B2A;
+  --md-primary-bg-color:        #861B2A;
+  --md-primary-fg-color:        #ffffff;
+  --md-primary-fg-color--light: #861B2A;
+  --md-primary-fg-color--dark:  #861B2A;
+  --md-code-hl-constant-color: #861B2A;
+  --md-typeset-a-color: #861B2A
+}
+
+.md-typeset .md-button {
+
+  color: #861B2A;
+}
+
+.md-tabs__item {
+  font-weight: 700;
+}
+.md-source__repository{
+  font-weight: 700;
+}
