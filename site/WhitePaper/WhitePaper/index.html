@@ -1,0 +1,1019 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FUXI.IS">
+      
+      
+        <meta name="author" content="Github">
+      
+      
+        <link rel="canonical" href="https://zhangyouyi125.github.io/wiki/WhitePaper/WhitePaper/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+    
+    
+      
+        <title>产品白皮书 - FUXI.IS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c45fdb8e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FUXI.IS" class="md-header__button md-logo" aria-label="FUXI.IS" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FUXI.IS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              产品白皮书
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="pink"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/zhangyouyi125/wiki/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      主页
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      产品白皮书
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../API_Guide/API_Guide/" class="md-tabs__link">
+        API 接口
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../Developer/Developer/" class="md-tabs__link">
+      开发者
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../Cooperator/Cooperator/" class="md-tabs__link">
+      合作伙伴
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../AboutUs/AboutUs/" class="md-tabs__link">
+      关于我们
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FUXI.IS" class="md-nav__button md-logo" aria-label="FUXI.IS" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    FUXI.IS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/zhangyouyi125/wiki/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        主页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          产品白皮书
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        产品白皮书
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.  适用用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2.  概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.  产品背景
+  </a>
+  
+    <nav class="md-nav" aria-label="3.  产品背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 建设背景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 痛点问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 建设目标
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.  产品介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="4.  产品介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    4.1 产品架构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 产品功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    4.3 应用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    4.4 产品优势
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.  机构介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.  联系试用
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          API 接口
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API 接口" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API 接口
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../API_Guide/API_Guide/" class="md-nav__link">
+        接口文档
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../API_Guide/API_Usage/" class="md-nav__link">
+        接口试用
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Developer/Developer/" class="md-nav__link">
+        开发者
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Cooperator/Cooperator/" class="md-nav__link">
+        合作伙伴
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AboutUs/AboutUs/" class="md-nav__link">
+        关于我们
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.  适用用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2.  概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.  产品背景
+  </a>
+  
+    <nav class="md-nav" aria-label="3.  产品背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 建设背景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 痛点问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 建设目标
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.  产品介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="4.  产品介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    4.1 产品架构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 产品功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    4.3 应用场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    4.4 产品优势
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.  机构介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.  联系试用
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/zhangyouyi125/wiki/WhitePaper/WhitePaper.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="_1">伏羲数据互操作系统白皮书<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><a class="md-button" href="https://github.com/zhangyouyi125/wiki/raw/gh-pages/WhitePaper/FUXI.IS%20%E4%BA%A7%E5%93%81%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf">下载 FUXI IS 白皮书</a></p>
+<h2 id="1">1.  适用用户<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>​   数据规范制定者、政府企业数据治理者、政府企业数据管理者</p>
+<h2 id="2">2.  概述<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>​   本文档将向您介绍“伏羲数据互操作系统 ”产品(以下简称“产品”)的背景、产品架构、产品形态、产品功能、针对性的介绍应用场景，并且能向您展现产品优势及我们提供的服务保障能力。 </p>
+<p>​   为了推动数字经济发展，挖掘数据要素价值，加速数据资源整合，破解数据孤岛问题，伏羲智库提出了技术解决方案——“伏羲数据互操作系统”（Fuxi Interoperating System，FUXI.IS）。该系统是伏羲智库与中科院计算所互联网基础技术联合实验室共同研发的核心产品，是面向城市级数据要素管理的新型逻辑信息基础设施，用于各类数据（数字对象）的标识索引、确权、基于认证授权进行安全交换的系统。作为可信数据交换综合解决方案，FUXI.IS 将通过“标识确权 - 认证授权 - 安全计算”，驱动海量数据安全流转。</p>
+<h2 id="3">3.  产品背景<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 建设背景<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p><strong>【数字经济的时代趋势，数据为关键的生产要素】</strong></p>
+<p>​   近年来，以数据要素为基础的数字经济已逐渐成为未来经济发展趋势。一方面，数字经济已成为我国经济发展的新动能，数字经济增加值规模由2005年的2.6万亿元增加至2019年的35.8万亿元，2021年有望突破45万亿元。与此同时，数字经济在GDP中所占的比重逐年提升，由2005年的14.2%提升至2019年的36.2%。另一方面，国家已明确构建以数据为关键生产要素的数字经济。</p>
+<p>​   随着城市数字经济的发展、新型智慧城市的建设、工业互联网中大规模物联网终端的落地使用以及元宇宙技术的探索发展，数据量呈爆发式增长。政府金融、电信、工业、企业、医疗、交通以及科研等领域都拥有各自的数据，如何使数据安全的交换和流通，是数字经济发展中亟待解决的问题。</p>
+<p><strong>【政策背景】</strong></p>
+<p>​   2020年，中共中央国务院发布《关于构建更加完善的要素市场化配置体制机制的意见》，数据作为一种新型生产要素写入文件中，与土地、劳动力、资本、技术等传统要素并列为关键要素之一。意见明确加快培育数据要素市场，推进政府数据开放共享、提升社会数据资源价值、加强数据资源整合与安全保护。随着数据共享相关法规的实施和推进，加快数据开放共享，深化数据在各行业的创新应用，通过建设数据强国推动经济转型升级，已经成为产学研各界的共识。</p>
+<p>​   2021年，中共中央发布《中华人民共和国国民经济和社会发展第十四个五年规划和2035年远景目标纲要》，提出要坚持创新驱动发展，全面塑造发展新优势。在科技创新上，提出要持续加大基础研究、整合优化科技资源配置、建设重大科技创新平台、激发人才创新活力、全面激活市场主体活力、健全科技成果产权激励机制等。</p>
+<p><strong>【阻碍数据共享流转，造成数据孤岛的四大关键问题】</strong></p>
+<p>​   与此同时，随着大数据共享和开放的不断推进，业务生态更加复杂，数据处理的角色更加多元，导致数据采集、发布、存储、交换、计算等环节更加多样，“数据安全、数据垄断、隐私侵犯、监管困难”正在成为阻碍数据共享与流转，造成数据孤岛的关键问题：</p>
+<ul>
+<li>在数据采集层面，数据主权受到威胁。数据一旦被他人采集后就脱离数据所有者的控制，采集方可利用数据进行任何操作而不告知数据所有者，且无法对其行为进行追溯，这与《中华人民共和国个人信息保护法》中的公共数据保护需求相违背；</li>
+<li>在数据发布层面，数据权属缺少公开确认。数据发布由资源方自主提交，系统对数据缺少唯一性鉴别与时序公证登记，产生了数据重复登记、权属不清等关键问题；</li>
+<li>在数据存储与汇聚层面，不同权属的数据汇聚并存储于业务系统，数据的分析或使用脱离数据所有者控制，与数据使用过程中的透明性、可信性、可控性等原则相背离；</li>
+<li>在数据交换层面，随着数据共享和交换的增多，数据从产生到销毁从单向、单路径的简单流动模式演变为交错复杂的流动模式，实现异构网络环境下跨越数据控制者或安全域的全路径数据追踪溯源变得更加困难；</li>
+<li>在数据计算层面，大数据分析技术可以实现多源数据处理，能够将经过匿名化处理的数据再次还原，导致现有隐私计算技术和数据脱敏技术“失灵”，直接威胁用户的隐私安全。随着多源数据计算场景的增多，需要在保障数据机密性的同时，实现数据的流通与共享。</li>
+</ul>
+<p><strong>【政府与公共部门需求】</strong></p>
+<p>​   这些关键问题已经成为制约城市数字发展的瓶颈。对于城市而言，建设智慧城市，必然会涉及公共数据，而这些数据归口在政府机关和公共服务部门（包括海关、税务、银行、医院、学校、科研机构等），后者对数据封闭性和安全性有严格要求。所以，虽然它们掌握巨大的数据资源，但普遍存在“不愿”、“不敢”和“不会”共享开放，于是形成了数据孤岛。数据孤岛存在制度和技术的双重约束，尽管国家在政策和制度设计上进行了合规性探索，但是要想彻底打破数据孤岛，还需要通过技术手段在数据共享与流转的各个环节有效保障。</p>
+<p><strong>【企业需求】</strong></p>
+<p>​   其次，在很多企业内部，由于重复建设、管理边界不清等问题，也会形成数据孤岛。企业或集团的信息管理系统主要建立在部门内部和系统内部，业务流程割裂，缺乏规范标准体系，数据采集格式不统一，管理规则不明确，数据的归集、整合、清洗、比对短时间内难以完成。数据在各部门之前的流转权限难以控制，全责不清晰，这些问题也会形成企业内部“数据孤岛”。</p>
+<p><strong>【数据市场需求】</strong></p>
+<p>​   数据市场的发展依赖于数据交易过程中的可用性和可靠性。全国各地都在积极布局大数据交易所，数据交易所打破了数据孤岛，使数据进行交换和流通，最大程度利用和挖掘数据的价值。上海数据交易所、中新天津生态城北方大数据交易中心以及北京国际大数据交易所等不断成立，数据作为重要的生产要素和战略资源的核心价值在数据交易中得到体现。数据交易中如何保障数据的安全、数据所有者对数据的主权控制、数据使用方获取数据的可用性仍然是一个亟待解决的问题。数据交易能否良性发展，交易中参与方的权益能否得到有效的保障，这些问题需要通过各种技术手段构建一个安全可靠的数据互操作系统来解决。</p>
+<h3 id="32">3.2 痛点问题<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>对于政府机构和公共部门而言：</p>
+<ul>
+<li>如何在城市层面对公共数据形成自顶向下的数据资产标识和确权管理？</li>
+<li>如何面向不同类型用户对公共数据的访问途径进行权限控制和行为溯源？</li>
+<li>如何在保障各参与方权益的情况下，进行各个智慧城市业务系统之间的公共数据联合分析与计算？</li>
+</ul>
+<p>对于企业而言：</p>
+<ul>
+<li>如何对企业内部各类异构的人、机、物、数等生产资料标识进行兼容性管理？</li>
+<li>
+<p>如何解决企业内部复杂的跨部门业务流程执行过程中的数据权限控制问题？</p>
+</li>
+<li>
+<p>如何在不泄露敏感商业数据的前提下实现企业内部、企业与客户、企业与企业之间的信息交换问题？</p>
+</li>
+</ul>
+<h3 id="33">3.3 建设目标<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<p>​   FUXI.IS以城市政府机构、企业机构、数据交易所以及科创机构为目标客户，全面而深入的研究了客户对数据互操作系统的不同需求特性，采用先进的技术和理念，进行技术创新和改革，致力于成为新型数字基础设施。</p>
+<p>​   以先进技术赋能城市，构建可信可控可靠的数据互操作系统，充分释放数据要素价值，实现数字经济发展过程中海量数据的确权、开放、流通和交易，破解智能城市数据要素共享难题，驱动智能城市应用生态有序发展，促进经济与社会发展的数字化转型。</p>
+<h2 id="4">4.  产品介绍<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>​   伏羲数据互操作系统（FUXI.IS）是伏羲智库与中科院计算所互联网基础技术联合实验室共同研发的核心产品，是面向城市数据要素管理的新型逻辑信息基础设施，用于数字城市中各类数据（数字对象）的标识索引、认证授权和安全交换的系统。</p>
+<p>​   传统的数据中台模式是从各个机构和组织处采集数据，将数据汇集到中台处，以数据离地的模式进行数据采集工作。中台模式使得数据脱离数据拥有者的控制，一旦数据离地后，数据的复制、传播以及使用等行为未经数据拥有者授权而进行，该模式存在数据安全隐患和隐私泄露风险，违背了保护数据和隐私信息的原则。FUXI.IS以数据治理为核心，贯彻落实《个人信息保护法》和《数据安全法》，提出了数据中枢模式。基于该模式，FUXI.IS无须对数据进行中心化归集，而是在各个独立业务系统中数据不离地的情况下，利用标识、区块链、隐私计算等诸多技术，完成对数据的标识索引、认证确权、安全交换与可视化呈现，实现城市海量数据高效、安全“对话”。在破解智能城市数据要素共享难题的同时，也将驱动智能交通、智能制造、智能能源等智能城市应用生态的健康有序发展，并提高数字政府建设水平，构建良好数字生态，推动城市数字化发展。</p>
+<p><img alt="img" src="../whitepaper.assets/clip_image004.png" /></p>
+<h3 id="41">4.1 产品架构<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>​   FUXI.IS形成自下而上层次式的技术体系，包括标识索引、认证授权和安全交换三大核心的技术模块。</p>
+<ul>
+<li>由多利益方组成的对数据标识及其数据所有权形成共识，组成公开的全球身份和数据目录，分散存储在各利益方中，从而实现数据标识及数据所有权的公开透明、安全可信。</li>
+<li>参照已有的域名系统和区块链技术优势，实现既保持自顶向下的架构设计，又有一定的灵活度和自由度的标识体系。</li>
+<li>支持人、机、物等各类数据的标识。</li>
+<li>通过建立数据和所有者的关联，以数据摘要、数据指纹等技术实现数据的确权；\结合分布式技术，构建符合可审计性、透明性、稳定性、安全性、可恢复性（AT-SSR）特性的标识管理和标识解析服务体系。</li>
+</ul>
+<p><strong>认证授权层：</strong></p>
+<ul>
+<li>一套规范的认证和授权协议，实现任何身份和数据的使用都需经过所有者授权，保障用户行使自身数据所有权的权益。</li>
+<li>提供统一的数字身份管理，数字身份是认证和授权的对象，数字身份的统一便于业务间的互联互通，也便于个人账号管理、数据管理以及授权管理的实现。</li>
+<li>认证授权层以OIDC（OpenID Connect）身份认证协议为基础，身份认证和授权；</li>
+<li>提供丰富的访问控制规则，以满足组合授权的需求，并定义时间窗口、访问来源等细粒度指标供数据所有者灵活定义访问控制规则。</li>
+</ul>
+<p><strong>安全交换层：</strong></p>
+<ul>
+<li>由数据标准化和数据安全化两大子模块构成，既解决数据交换的“最后一公里”问题，又能在保障数据各方权益的前提下支持不同数据权利的交换需求。</li>
+<li>数据标准化模块解决数据交换中的数据接入不规范问题，以数据存储方为应用对象，可用于数据的统一接入管理，支持异构数据源的连接，自动生成数据字段表，并转换成可访问的URL，以结合标识索引层发布数据。</li>
+<li>数据安全化模块解决数据交换中的数据安全和隐私保护问题，基于数字水印、加密技术和扰动技术的数据保护套件提供数据所有权交换过程中的数据安全保障，并以此作为数据使用权交换的数据隐私保护基础。</li>
+<li>提供以MPC技术为主的联合查询统计和以联邦学习为主的联合建模功能，以在数据使用权交换的不同计算需求下，实现交换过程的隐私保护。数据安全化模块中的算法以算法插件的形式存在，不同厂商设计的算法可灵活的加载和部署到该模块中使用。</li>
+</ul>
+<p><img alt="Graphical user interface  Description automatically generated" src="../whitepaper.assets/clip_image006.png" /><strong>产品形态</strong></p>
+<p><strong>FUXI.IS包含三个系列产品：</strong></p>
+<ul>
+<li>C：城市数字标识服务。提供身份和数据标识服务，基于DNS协议构建P2P网络，提供具备ATSSR特性的域名服务体系和数据（包括身份）标识、确权和索引查询的基础设施服务；</li>
+<li>CA：城市统一认证和授权服务。基于C和OIDC协议构建，提供基于认证授权的数据交换平台；</li>
+<li>CAS：基于安全计算的数据交换服务。基于CA和隐私计算技术构建，提供数据安全隐私计算服务 + 认证和授权服务 + 身份和数据标识服务提供基于安全计算的数据交换平台。</li>
+</ul>
+<h3 id="42">4.2 产品功能<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p><strong>智能城市数字身份标识</strong></p>
+<p>​   依托ICANN的顶级域名体系下为每个城市建立独有的城市顶级域名，如.beijing/北京、.shanghai/上海，并在顶级域名下以域名形态为机构和市民分配城市数字身份标识，作为其在该城市的唯一数字身份标识，打破由于城市内各个业务系统身份标识不统一而产生的身份孤岛。</p>
+<p><strong>城市海量异构数据智能标识</strong></p>
+<p>​   依托高可靠的去中心化架构建立城市可信标识体系，在具备可达性、多语义、可读性的同时，兼容DNS、DOI、Ecode、DOI等多种符合国内外标准的异构标识体系，打通城市身份和数据底层。</p>
+<p><strong>数据确权与溯源</strong></p>
+<p>​   依托底层区块链，通过数字签名，实现对用户身份以及数据归属权的确认，对数据的交易进行全面记录，实现对数据权属转化的溯源。</p>
+<p><strong>数据交换认证授权</strong></p>
+<p>​   通过可信数据交换和认证授权流程，实现数据权益保护，实现对数据交换流程的合规、可控、可信与可监管。</p>
+<p><strong>多方数据隐私计算</strong></p>
+<p>​   在保障数据隐私及安全前提下完成多方数据联合分析、联合训练、联合预测，实现数据价值的流通，打通城市内部，企业内部和企业和企业之间的数据孤岛，助力数据价值释放。</p>
+<h3 id="43">4.3 应用场景<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p><strong>政务领域</strong></p>
+<p>​   基于FUXI.IS构建政务数据治理平台，建立数据的标识索引，通过基于授权的数据共享机制来保证各委办局的数据安全，支持多元主体之间的互信互认，在无需中心化数据归集的情况下，保证各委办局数据状态可见、可用、可查，支持数据流转记录的透明可追溯与不可篡改，促进了政务信息资源共享，为智慧政务应用提供了能力服务支撑。</p>
+<p><strong>医疗领域</strong></p>
+<p>​   基于FUXI.IS建立医疗数据的智能标识和高效索引，形成医疗数据共享链条中的“人（患者、医生、机构）-机（存储服务器）-物（医疗设备）”三元互联互通。支持医疗数据共享全流程的安全可控、透明可追溯，破解了医疗数据跨平台、跨机构数据流通难题，更加健全了医疗数据安全管理机制。</p>
+<p><strong>金融领域</strong></p>
+<p>​   为了应对金融领域数据隐私保护难题，打破数据孤岛的现实困难，满足数据融合使用的迫切需要，FUXI.IS探索一种面向数据隐私保护的数据互操作新范式，立足金融领域需求，通过技术研发与创新，能简单、合法且低成本地获取有效的数据信息，实现金融数据的有效监管，为客户提供更放心和满意的科技服务。</p>
+<p><strong>交通领域</strong></p>
+<p>​   基于FUXI.IS智能城市操作系统，在保证“数据不离地”的情形下，形成公安、交警、交通、城管、互联网等城市企事业单位数据的共享，形成交通数据资源共享目录，为交通数据资源的共享利用提供支撑，结合交通超脑大数据、AI能力，打造城市交通超脑，为业务决策分析进行赋能，服务于各项城市交通业务场景。</p>
+<p><strong>科创领域</strong></p>
+<p>​    基于FIXI.IS，以“一网通办”为抓手，打造面向科创生态参与方的线上服务平台，提供便捷高效的一站式服务，实现科创服务流程化、自动化、智能化，促使科创生态参与方从被动配合到主动参与平台运营，将科研结果发布、课题申请、人员招聘、举办会议等业务转到线上完成。以“能力变现”为出发点，打造面向科研机构、科研人员、政府管理部门和投融资机构的知识电商平台，建设国际科创领域的“京东商城”：支持“平台自营+第三方入驻”的运营模式，线上赋能科研成果共享、交易以及投融资等活动，实现知识价值提升和变现，形成商业闭环，促进平台自运营。</p>
+<p><strong>数据市场</strong></p>
+<p>​    为促进数据市场良性发展，保证数据提供方对数据的控制主权、数据可用性，FUXI.IS基于数据中枢模式，提供数据发布、标识检索、身份认证、数据授权以及安全交换的功能，完善多层次数据交易流通机制，促进跨域数据流通，均衡数据交易供需市场，构建数据交易生态圈，繁荣大数据交易产业。</p>
+<h3 id="44">4.4 产品优势<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<p><strong>数据不离地</strong></p>
+<p>​   数据无需中心化归集，避免数据被垄断的风险，保障用户数据所有权前提下，完成数据价值的高效流转变现。</p>
+<p><strong>开放互通</strong></p>
+<p>​   兼容域名、Handle、OID、GS1和VAA等标识，支持不同标识体系的异构兼容、互联互通，实现全球可达。</p>
+<p><strong>安全可控</strong></p>
+<p>​   通过权限控制、数字身份、行为分析、内容检测等技术，为用户提供了隐私保护、身份认证、数据授权、安全防护等能力。</p>
+<p><strong>透明可追溯</strong></p>
+<p>​   支持通用、透明、可追溯的数据互操作，数据确权、交换等操作行为上链，透明可监督，支持事后审计，保障多方权益。</p>
+<p><strong>安全隐私计算</strong></p>
+<p>​   在不披露底层数据前提下，基于区块链、联邦学习、多方安全计算等技术实现联合建模，以开放协同的方式充分释放数据要素生产力。</p>
+<p><strong>隐私保护</strong></p>
+<p>​    根据数据提供方的隐私保护需求和相关法律法规的规定，基于数据脱敏、差分隐私等隐私保护技术对数据进行加工处理，有效保障数据中隐私信息的安全。</p>
+<h2 id="5">5.  机构介绍<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>​   伏羲智库是由产业界及学术界知名青年专家共同发起成立的非营利性互联网特色研究机构，旨在推动数字转型以缩小数字鸿沟、促进互联互通以弥合网络碎片。在北京、山东两地设立双总部，并在全球设立合作中心。</p>
+<p>​   伏羲智库以“联合研究创新、协同促进发展”理念，以“研究机构、科技公司、产业资本、国际论坛和教育机构”五位一体模式，联合业界企业、学术机构和相关政府部门，打造未来智能城市、信息基础设施、知识价值交换、乡村数字振兴等智能城市不同领域的协同创新中心。</p>
+<p>​   伏羲智库成立之初得到了第四次工业革命提出者、世界经济论坛创始人克劳 斯·施瓦布教授，互联网联合发明人罗伯特·卡恩博士与温顿·瑟夫博士，中国互联网创始人胡启恒院士的亲切指导。</p>
+<p>​   伏羲是中华人文始祖，其创造的龙图腾所代表的开放包容性文化是互联网的文化基因，其发明的易经八卦所代表的二进制是计算机的技术基础。伏羲智库尊崇先贤，择“伏羲”为名，是以励勉。</p>
+<p>​   伏羲智库将秉承“知行合一、家国天下”的机构文化，打造“国际一流新型智库和国家级研究机构”，积极融入和助力数字文明时代中华民族伟大复兴进程，为推动中国经济发展和社会治理的数字化转型提出实践方案，为推动全球数字文明构建贡献中国智慧。</p>
+<p>伏羲智库与清华大学互联网治理研究中心、中科院计算所互联网基础技术实验室等机构，采用协同创新方式，构成研究联合体，聚焦开展产业整合、文化推广、政策研究和技术研发。伏羲智库孵化伏羲科技、伏羲资本、伏羲论坛、伏羲书院，并以“五位一体”模式，基于数字城市全球标识，打造面向数据交换的“智能城市操作系统”，促进数据跨域互联共享，推动城市智能化进程，支撑新型智慧城市建设运营和安全保障。</p>
+<p>​   伏羲智库是中国互联网协会副理事长单位、中国网络空间安全协会和金砖国家智库合作中方理事会理事单位、中国网络社会组织联合会成员机构。国际方面，伏羲智库是中国互联网治理论坛工作组成员单位、G20全球智慧城市联盟机构合作伙伴，并成为国际互联网协会（ISOC）会员，同时与世界经济论坛、联合国契约组织等国际组织建立合作关系。</p>
+<h2 id="6">6.  联系试用<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+
+
+
+<!-- Add copied contents from original content.html here -->
+
+<!-- Get setting from mkdocs.yml, but allow page-level overrides -->
+
+
+
+<!-- Inject Disqus into current page -->
+
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function() {
+      this.page.url = "https://zhangyouyi125.github.io/wiki/WhitePaper/WhitePaper/"
+      this.page.identifier =
+        "WhitePaper/WhitePaper/" // 
+    }
+
+    /* Set up for the first time */
+    if (typeof DISQUS === "undefined") {
+      var script = document.createElement("script")
+      script.async = true
+      script.src = "https://fuxiis.disqus.com/embed.js"
+      script.setAttribute("data-timestamp", Date.now())
+
+      /* Inject script tag */
+      document.body.appendChild(script)
+
+    /* Set up on navigation (instant loading) */
+    } else {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      })
+    }
+  </script>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: 主页" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              主页
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../API_Guide/API_Guide/" class="md-footer__link md-footer__link--next" aria-label="Next: 接口文档" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              接口文档
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      ©2021 FUXI institution. All Rights Reserved.  联系方式:support@fuxiinstitution.org
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/FuxiInstitution" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://weibo.com/u/7206532842" target="_blank" rel="noopener" title="weibo.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://mp.weixin.qq.com/s/0nhfsh22n0kEOzupWEZX2Q" target="_blank" rel="noopener" title="mp.weixin.qq.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.efc77bfa.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b89f2075.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

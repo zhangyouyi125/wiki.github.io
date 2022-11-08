@@ -1,16 +1,16 @@
 # Project information
 site_name: FUXI.IS
 site_url: https://zhangyouyi125.github.io/wiki/
-site_description: fuxiis
-site_author: Github
+site_description: FUXI.IS
+site_author: FUXI.IS
 
 # Repository
-repo_name: Github
+repo_name: FUXI.IS
 repo_url: https://github.com/zhangyouyi125/wiki
 edit_uri: https://github.com/zhangyouyi125/wiki
 
 # Copyright
-copyright: "zhangyouyi"
+copyright: "©2021 FUXI institution. All Rights Reserved.  联系方式:support@fuxiinstitution.org"
 
 theme:
   name: material
@@ -42,7 +42,7 @@ theme:
     - navigation.tracking
     - search.highlight
     - search.share
-    - search.suggest
+    # - search.suggest
     # - toc.integrate
 
   palette:
@@ -59,18 +59,18 @@ theme:
     #     icon: material/toggle-switch-off-outline
     #     name: Switch to light mode
     
-    
-
+  
 
 nav:
-  - Home: index.md
-  - 产品白皮书: WhitePaper/FUXI.IS_WhitePaper.md
+  - 主页: index.md
+  - 产品白皮书: WhitePaper/WhitePaper.md
   # 下面代表的是一组页面
-  - API 接口文档: API_Guide/FUXI.IS_API_Guide.md
-  - 开始体验: page1.md
-  - 开发者: subpage/测试.md
-  - 合作伙伴: subpage/测试.md
-  - 关于我们: AboutUs.md
+  - API 接口: 
+    - 接口文档: API_Guide/API_Guide.md
+    - 接口试用: API_Guide/API_Usage.md
+  - 开发者: Developer/Developer.md
+  - 合作伙伴: Cooperator/Cooperator.md
+  - 关于我们: AboutUs/AboutUs.md
 
 extra_css:
   - stylesheets/extra.css
@@ -79,14 +79,14 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
-    - icon: fontawesome/brands/facebook
-      link: https://twitter.com/squidfunk
+      link: https://twitter.com/FuxiInstitution
     - icon: fontawesome/brands/weibo
-      link: https://twitter.com/squidfunk
+      link: https://weibo.com/u/7206532842
+    - icon: fontawesome/brands/weixin
+      link: https://mp.weixin.qq.com/s/0nhfsh22n0kEOzupWEZX2Q
     - icon: fontawesome/brands/github
       link: https://twitter.com/squidfunk
-  image: ./images/fuxilogo.png
+  
 
     
 
@@ -125,6 +125,8 @@ markdown_extensions:
   - pymdownx.tilde
   - attr_list
   - md_in_html
+
+
   
 
 extra_javascript:

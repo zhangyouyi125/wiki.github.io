@@ -2,47 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zhangyouyi125.github.io/wiki/</loc>
-         <lastmod>2021-12-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zhangyouyi125.github.io/wiki/AboutUs/</loc>
-         <lastmod>2021-12-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zhangyouyi125.github.io/wiki/page1/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zhangyouyi125.github.io/wiki/swagger/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zhangyouyi125.github.io/wiki/API_Guide/FUXI.IS_API_Guide/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <loc>https://zhangyouyi125.github.io/wiki/API_Guide/API_Guide/</loc>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zhangyouyi125.github.io/wiki/WhitePaper/FUXI.IS_WhitePaper/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <loc>https://zhangyouyi125.github.io/wiki/API_Guide/API_Usage/</loc>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zhangyouyi125.github.io/wiki/subpage/page1/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <loc>https://zhangyouyi125.github.io/wiki/AboutUs/AboutUs/</loc>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zhangyouyi125.github.io/wiki/subpage/page2/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <loc>https://zhangyouyi125.github.io/wiki/Cooperator/Cooperator/</loc>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zhangyouyi125.github.io/wiki/subpage/%E6%B5%8B%E8%AF%95/</loc>
-         <lastmod>2021-12-24</lastmod>
+         <loc>https://zhangyouyi125.github.io/wiki/Developer/Developer/</loc>
+         <lastmod>2021-12-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zhangyouyi125.github.io/wiki/WhitePaper/WhitePaper/</loc>
+         <lastmod>2021-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
